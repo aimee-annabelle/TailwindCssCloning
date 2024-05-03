@@ -5,8 +5,150 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <link rel="stylesheet" href="/css/tailwind.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
   </head>
-  <body>
-    <h1>Hello world!</h1>
+  <body class="box-border m-0 p-0">
+    <!-- main div -->
+    <div class="bg-white p-2">
+      <!-- navbar -->
+      <div
+        class="bg-[url(https://templatemo.com/templates/templatemo_589_lugx_gaming/assets/images/banner-bg.jpg)] bg-cover h-[100vh] rounded-b-3xl py-5 px-20"
+      >
+        <div
+          x-data="{ scroll: false }"
+          @scroll.window="scroll = (window.pageYOffset > 50) ? true : false"
+          :class="{ 'bg-blue-600': scroll, 'bg-transparent': !scroll }"
+          class="sticky z-[100] top-0 rounded-b-3xl p-3 max-w-full flex flex-row items-center text-white justify-between"
+        >
+          <img
+            src="https://templatemo.com/templates/templatemo_589_lugx_gaming/assets/images/logo.png"
+            alt=""
+            class="mx-20 h-10 object-cover"
+          />
+          <div
+            class="justify-stretch items-center space-x-6 font-light text-sm mx-20"
+          >
+            <a
+              href="#"
+              class="hover:bg-blue-500 hover:rounded-full px-4 py-2 active:bg-blue-500"
+              >Home</a
+            >
+            <a
+              href=""
+              class="hover:bg-blue-500 hover:rounded-full px-4 py-2 active:bg-blue-500"
+              >Our Shop</a
+            >
+            <a
+              href=""
+              class="hover:bg-blue-500 hover:rounded-full px-4 py-2 active:bg-blue-500"
+              >Product details</a
+            >
+            <a
+              href=""
+              class="hover:bg-blue-500 hover:rounded-full px-4 py-2 active:bg-blue-500"
+              >Contact us</a
+            >
+            <button
+              class="bg-red-400 px-4 py-2 rounded-full uppercase font-medium"
+            >
+              Sign in
+            </button>
+          </div>
+        </div>
+        <div class="grid grid-cols-2 text-white mt-20 mx-20 p-3">
+          <div class="grid mx-auto self-center space-y-10">
+            <h1 class="font-medium text-xl uppercase">Welcome to LUGX</h1>
+            <h2 class="relative text-5xl font-bold uppercase">
+              Best gaming site ever!
+              <img
+                class="absolute left-32"
+                src="https://templatemo.com/templates/templatemo_589_lugx_gaming/assets/images/caption-dec.png"
+                alt=""
+              />
+            </h2>
+            <p class="text-sm">
+              LUGX Gaming is free Bootstrap 5 HTML CSS website template for your
+              gaming websites. You can download and use this layout for
+              commercial purposes. Please tell your friends about TemplateMo.
+            </p>
+            <div class="bg-white max-w-md rounded-full relative">
+              <input
+                type="text"
+                placeholder="Type something"
+                name="search"
+                class="text-xs px-4 py-4 rounded-full"
+              />
+              <button
+                class="bg-red-400 px-5 right-0 py-3 absolute self-stretch rounded-full uppercase font-medium"
+              >
+                Search now
+              </button>
+            </div>
+          </div>
+          <div class="place-self-end relative">
+            <img
+              src="https://templatemo.com/templates/templatemo_589_lugx_gaming/assets/images/banner-image.jpg"
+              alt=""
+              class="rounded-3xl object-cover"
+            />
+            <span
+              class="absolute top-4 right-4 px-4 py-2 rounded-full bg-blue-500 font-bold text-xl"
+              >$22</span
+            >
+            <span
+              class="absolute -bottom-5 -left-10 bg-red-400 rounded-full px-3 text-2xl font-bold py-7"
+              >-40%</span
+            >
+          </div>
+        </div>
+        <div class="absolute grid grid-cols-4 mx-20 py-10 gap-3">
+          <div
+            class="flex flex-col py-10 px-20 justify-center shadow-xl rounded-3xl gap-3 bg-white"
+          >
+            <img
+              src="https://templatemo.com/templates/templatemo_589_lugx_gaming/assets/images/featured-01.png"
+              class="bg-blue-500 rounded-full p-5 object-cover w-20 h-20 place-self-center"
+              alt=""
+            />
+            <h1 class="uppercase font-bold text-lg">Free Storage</h1>
+          </div>
+          <div
+            class="flex flex-col py-10 px-20 justify-center shadow-xl rounded-3xl gap-3 bg-white"
+          >
+            <img
+              src="https://templatemo.com/templates/templatemo_589_lugx_gaming/assets/images/featured-01.png"
+              class="bg-blue-500 rounded-full p-5 object-cover w-20 h-20 place-self-center"
+              alt=""
+            />
+            <h1 class="uppercase font-bold text-lg">Free Storage</h1>
+          </div>
+          <div
+            class="flex flex-col py-10 px-20 justify-center shadow-xl rounded-3xl gap-3 bg-white"
+          >
+            <img
+              src="https://templatemo.com/templates/templatemo_589_lugx_gaming/assets/images/featured-01.png"
+              class="bg-blue-500 rounded-full p-5 object-cover w-20 h-20 place-self-center"
+              alt=""
+            />
+            <h1 class="uppercase font-bold text-lg">Free Storage</h1>
+          </div>
+          <div
+            class="flex flex-col py-10 px-20 justify-center shadow-xl rounded-3xl gap-3 bg-white"
+          >
+            <img
+              src="https://templatemo.com/templates/templatemo_589_lugx_gaming/assets/images/featured-01.png"
+              class="bg-blue-500 rounded-full p-5 object-cover w-20 h-20 place-self-center"
+              alt=""
+            />
+            <h1 class="uppercase font-bold text-lg">Free Storage</h1>
+          </div>
+        </div>
+      </div>
+    </div>
   </body>
 </html>
