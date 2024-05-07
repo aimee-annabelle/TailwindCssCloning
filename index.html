@@ -8,17 +8,25 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+      integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
       href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
       rel="stylesheet"
     />
   </head>
   <body class="box-border m-0 p-0">
     <!-- main div -->
-    <div class="bg-white p-2">
-      <!-- navbar -->
+    <div class="">
+      <!-- top section -->
       <div
-        class="bg-[url(https://templatemo.com/templates/templatemo_589_lugx_gaming/assets/images/banner-bg.jpg)] bg-cover h-[100vh] rounded-b-3xl py-5 px-20"
+        class="bg-[url(https://templatemo.com/templates/templatemo_589_lugx_gaming/assets/images/banner-bg.jpg)] bg-cover h-[100vh] rounded-b-3xl py-5 px-20 relative"
       >
+        <!-- navbar -->
         <div
           x-data="{ scroll: false }"
           @scroll.window="scroll = (window.pageYOffset > 50) ? true : false"
@@ -60,6 +68,7 @@
             </button>
           </div>
         </div>
+        <!-- welcome section -->
         <div class="grid grid-cols-2 text-white mt-20 mx-20 p-3">
           <div class="grid mx-auto self-center space-y-10">
             <h1 class="font-medium text-xl uppercase">Welcome to LUGX</h1>
@@ -106,47 +115,205 @@
             >
           </div>
         </div>
-        <div class="absolute grid grid-cols-4 mx-20 py-10 gap-3">
+        <!-- 4 divs -->
+        <div class="absolute grid grid-cols-4 mx-20 py-10 gap-5">
           <div
             class="flex flex-col py-10 px-20 justify-center shadow-xl rounded-3xl gap-3 bg-white"
           >
-            <img
-              src="https://templatemo.com/templates/templatemo_589_lugx_gaming/assets/images/featured-01.png"
-              class="bg-blue-500 rounded-full p-5 object-cover w-20 h-20 place-self-center"
-              alt=""
-            />
+            <div
+              class="bg-blue-500 rounded-full p-5 w-20 h-20 place-self-center"
+            >
+              <img
+                src="https://templatemo.com/templates/templatemo_589_lugx_gaming/assets/images/featured-01.png"
+                class="object-cover"
+                alt=""
+              />
+            </div>
+
             <h1 class="uppercase font-bold text-lg">Free Storage</h1>
           </div>
           <div
             class="flex flex-col py-10 px-20 justify-center shadow-xl rounded-3xl gap-3 bg-white"
           >
-            <img
-              src="https://templatemo.com/templates/templatemo_589_lugx_gaming/assets/images/featured-01.png"
-              class="bg-blue-500 rounded-full p-5 object-cover w-20 h-20 place-self-center"
-              alt=""
-            />
-            <h1 class="uppercase font-bold text-lg">Free Storage</h1>
+            <div
+              class="bg-blue-500 rounded-full p-5 w-20 h-20 place-self-center"
+            >
+              <img
+                src="https://templatemo.com/templates/templatemo_589_lugx_gaming/assets/images/featured-02.png"
+                class="object-cover"
+                alt=""
+              />
+            </div>
+
+            <h1 class="uppercase font-bold text-lg">User more</h1>
           </div>
           <div
             class="flex flex-col py-10 px-20 justify-center shadow-xl rounded-3xl gap-3 bg-white"
           >
-            <img
-              src="https://templatemo.com/templates/templatemo_589_lugx_gaming/assets/images/featured-01.png"
-              class="bg-blue-500 rounded-full p-5 object-cover w-20 h-20 place-self-center"
-              alt=""
-            />
-            <h1 class="uppercase font-bold text-lg">Free Storage</h1>
+            <div
+              class="bg-blue-500 rounded-full p-5 w-20 h-20 place-self-center"
+            >
+              <img
+                src="https://templatemo.com/templates/templatemo_589_lugx_gaming/assets/images/featured-03.png"
+                class="object-cover"
+                alt=""
+              />
+            </div>
+            <h1 class="uppercase font-bold text-lg">Reply ready</h1>
           </div>
           <div
             class="flex flex-col py-10 px-20 justify-center shadow-xl rounded-3xl gap-3 bg-white"
           >
-            <img
-              src="https://templatemo.com/templates/templatemo_589_lugx_gaming/assets/images/featured-01.png"
-              class="bg-blue-500 rounded-full p-5 object-cover w-20 h-20 place-self-center"
-              alt=""
-            />
-            <h1 class="uppercase font-bold text-lg">Free Storage</h1>
+            <div
+              class="bg-blue-500 rounded-full p-5 w-20 h-20 place-self-center"
+            >
+              <img
+                src="https://templatemo.com/templates/templatemo_589_lugx_gaming/assets/images/featured-04.png"
+                class="object-cover"
+                alt=""
+              />
+            </div>
+
+            <h1 class="uppercase font-bold text-lg">easy layout</h1>
           </div>
+        </div>
+      </div>
+      <!-- end of top section -->
+      <!-- section two -->
+      <div class="mt-[20%] mx-20 px-20">
+        <div class="flex justify-between">
+          <div class="place-self-start uppercase">
+            <h6 class="text-red-400 text-sm font-bold">trending</h6>
+            <h1 class="capitalize text-4xl text-stone-900 font-bold">
+              Trending Games
+            </h1>
+          </div>
+          <button
+            class="place-self-end uppercase px-7 py-3 text-white font-semibold text-sm bg-red-400 rounded-full"
+          >
+            view all
+          </button>
+        </div>
+        <div class="mt-10 grid grid-cols-4 gap-5">
+          <div class="rounded-3xl bg-zinc-100 relative">
+            <div class="relative">
+              <img
+                class="rounded-3xl w-full"
+                src="https://templatemo.com/templates/templatemo_589_lugx_gaming/assets/images/trending-01.jpg"
+                alt=""
+              />
+              <p
+                class="absolute right-5 top-5 text-right bg-sky-500 flex flex-col text-white font-semibold text-base pt-2 pb-1 px-4 rounded-xl"
+              >
+                <em class="text-sm line-through">$28</em>
+                $20
+              </p>
+            </div>
+            <div class="p-6">
+              <p class="text-neutral-500 text-sm mb-1">Action</p>
+              <h1 class="font-semibold text-lg text-stone-900">
+                Assasin Creed
+              </h1>
+              <button
+                class="absolute right-6 bottom-6 bg-red-400 rounded-full px-3 py-2 text-white"
+              >
+                <i class="fa-solid fa-bag-shopping"></i>
+              </button>
+            </div>
+          </div>
+          <div class="rounded-3xl bg-zinc-100 relative">
+            <div class="relative">
+              <img
+                class="rounded-3xl w-full"
+                src="https://templatemo.com/templates/templatemo_589_lugx_gaming/assets/images/trending-01.jpg"
+                alt=""
+              />
+              <p
+                class="absolute right-5 top-5 text-right bg-sky-500 flex flex-col text-white font-semibold text-base pt-2 pb-1 px-4 rounded-xl"
+              >
+                $44
+              </p>
+            </div>
+            <div class="p-6">
+              <p class="text-neutral-500 text-sm mb-1">Action</p>
+              <h1 class="font-semibold text-lg text-stone-900">
+                Assasin Creed
+              </h1>
+              <button
+                class="absolute right-6 bottom-6 bg-red-400 rounded-full px-3 py-2 text-white"
+              >
+                <i class="fa-solid fa-bag-shopping"></i>
+              </button>
+            </div>
+          </div>
+          <div class="rounded-3xl bg-zinc-100 relative">
+            <div class="relative">
+              <img
+                class="rounded-3xl w-full"
+                src="https://templatemo.com/templates/templatemo_589_lugx_gaming/assets/images/trending-01.jpg"
+                alt=""
+              />
+              <p
+                class="absolute right-5 top-5 text-right bg-sky-500 flex flex-col text-white font-semibold text-base pt-2 pb-1 px-4 rounded-xl"
+              >
+                <em class="text-sm line-through">$64</em>
+                $34
+              </p>
+            </div>
+            <div class="p-6">
+              <p class="text-neutral-500 text-sm mb-1">Action</p>
+              <h1 class="font-semibold text-lg text-stone-900">
+                Assasin Creed
+              </h1>
+              <button
+                class="absolute right-6 bottom-6 bg-red-400 rounded-full px-3 py-2 text-white"
+              >
+                <i class="fa-solid fa-bag-shopping"></i>
+              </button>
+            </div>
+          </div>
+          <div class="rounded-3xl bg-zinc-100 relative">
+            <div class="relative">
+              <img
+                class="rounded-3xl w-full"
+                src="https://templatemo.com/templates/templatemo_589_lugx_gaming/assets/images/trending-01.jpg"
+                alt=""
+              />
+              <p
+                class="absolute right-5 top-5 text-right bg-sky-500 flex flex-col text-white font-semibold text-base pt-2 pb-1 px-4 rounded-xl"
+              >
+                $32
+              </p>
+            </div>
+            <div class="p-6">
+              <p class="text-neutral-500 text-sm mb-1">Action</p>
+              <h1 class="font-semibold text-lg text-stone-900">
+                Assasin Creed
+              </h1>
+              <button
+                class="absolute right-6 bottom-6 bg-red-400 rounded-full px-3 py-2 text-white"
+              >
+                <i class="fa-solid fa-bag-shopping"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- end of section 2 -->
+      <!-- section most played -->
+      <div class="mt-28 px-20 bg-neutral-100 rounded-[150px] py-24">
+        <div class="flex justify-between mx-20">
+          <div class="place-self-start uppercase">
+            <h6 class="text-red-400 text-sm font-bold">Top games</h6>
+            <h1 class="capitalize text-4xl text-stone-900 font-bold">
+              Most played
+            </h1>
+          </div>
+          <button
+            class="place-self-end uppercase px-7 py-3 text-white font-semibold text-sm bg-red-400 rounded-full"
+          >
+            view all
+          </button>
         </div>
       </div>
     </div>
