@@ -21,7 +21,7 @@
   </head>
   <body class="box-border m-0 p-0">
     <!-- main div -->
-    <div id="big-div">
+    <div id="big-div relative">
       <div
         id="navbar-colored"
         class="fixed bg-blue-600 z-[100] top-0 rounded-b-3xl p-3 w-full flex flex-row items-center px-24 text-white justify-between"
@@ -64,12 +64,12 @@
       </div>
       <!-- top section -->
       <div
-        class="bg-[url(https://templatemo.com/templates/templatemo_589_lugx_gaming/assets/images/banner-bg.jpg)] bg-cover h-[100vh] rounded-b-3xl py-5 px-20 relative"
+        class="bg-[url(https://templatemo.com/templates/templatemo_589_lugx_gaming/assets/images/banner-bg.jpg)] bg-cover lg:h-[100vh] rounded-b-3xl py-5 lg:px-20 relative"
       >
         <!-- navbar -->
         <div
           id="navbar-transparent"
-          class="sticky z-[100] top-0 rounded-b-3xl p-3 max-w-full flex flex-row items-center text-white justify-between"
+          class="z-[100] top-0 rounded-b-3xl p-3 max-w-full flex flex-col lg:flex-row items-center text-white justify-between"
         >
           <img
             src="https://templatemo.com/templates/templatemo_589_lugx_gaming/assets/images/logo.png"
@@ -77,10 +77,10 @@
             class="mx-20 h-10 object-cover"
           />
           <div
-            class="justify-stretch items-center space-x-6 font-light text-sm mx-20"
+            class="flex flex-col lg:flex lg:flex-row lg:justify-stretch space-y-2 lg:space-y-0 py-2 lg:py-0 items-center lg:space-x-6 font-light text-sm lg:mx-20"
           >
             <a
-              href="#"
+              href=""
               class="hover:bg-blue-500 hover:rounded-full px-4 py-2 active:bg-blue-500"
               >Home</a
             >
@@ -107,8 +107,10 @@
           </div>
         </div>
         <!-- welcome section -->
-        <div class="grid grid-cols-2 text-white mt-20 mx-20 p-3">
-          <div class="grid mx-auto self-center space-y-10">
+        <div
+          class="grid grid-rows-2 lg:grid-cols-2 text-white mx-5 text-center lg:text-left mt-20 lg:mx-20 p-3"
+        >
+          <div class="grid lg:mx-auto lg:self-center lg:space-y-10">
             <h1 class="font-medium text-xl uppercase">Welcome to LUGX</h1>
             <h2 class="relative text-5xl font-bold uppercase">
               Best gaming site ever!
@@ -123,15 +125,17 @@
               gaming websites. You can download and use this layout for
               commercial purposes. Please tell your friends about TemplateMo.
             </p>
-            <div class="bg-white max-w-md rounded-full relative">
+            <div
+              class="bg-white h-fit w-full lg:max-w-md rounded-full relative"
+            >
               <input
                 type="text"
                 placeholder="Type something"
                 name="search"
-                class="text-xs px-4 py-4 rounded-full"
+                class="text-xs px-4 py-4 w-full rounded-full"
               />
               <button
-                class="bg-red-400 px-5 right-0 py-3 absolute self-stretch rounded-full uppercase font-medium"
+                class="bg-red-400 px-5 right-0 py-3 absolute lg:self-stretch rounded-full uppercase font-medium"
               >
                 Search now
               </button>
@@ -148,17 +152,17 @@
               >$22</span
             >
             <span
-              class="absolute -bottom-5 -left-10 bg-red-400 rounded-full px-3 text-2xl font-bold py-7"
+              class="absolute -bottom-5 -left-5 lg:-left-10 bg-red-400 rounded-full px-3 text-2xl font-bold py-7"
               >-40%</span
             >
           </div>
         </div>
         <!-- 4 divs -->
         <div
-          class="absolute grid grid-cols-4 mx-20 py-10 justify-between gap-5"
+          class="absolute w-4/5 grid lg:grid-cols-4 lg:mx-20 py-10 justify-stretch gap-5 lg:-bottom-40"
         >
           <div
-            class="flex flex-col py-10 px-20 justify-center shadow-xl rounded-3xl gap-3 bg-white"
+            class="flex flex-col w-full py-10 px-20 justify-center shadow-xl rounded-3xl gap-3 bg-white"
           >
             <div
               class="bg-blue-500 rounded-full p-5 w-20 h-20 place-self-center"
@@ -170,7 +174,9 @@
               />
             </div>
 
-            <h1 class="uppercase font-bold text-lg">Free Storage</h1>
+            <h1 class="uppercase text-center font-bold text-lg">
+              Free Storage
+            </h1>
           </div>
           <div
             class="flex flex-col py-10 px-20 justify-center shadow-xl rounded-3xl gap-3 bg-white"
@@ -185,7 +191,7 @@
               />
             </div>
 
-            <h1 class="uppercase font-bold text-lg">User more</h1>
+            <h1 class="uppercase text-center font-bold text-lg">User more</h1>
           </div>
           <div
             class="flex flex-col py-10 px-20 justify-center shadow-xl rounded-3xl gap-3 bg-white"
@@ -199,10 +205,10 @@
                 alt=""
               />
             </div>
-            <h1 class="uppercase font-bold text-lg">Reply ready</h1>
+            <h1 class="uppercase text-center font-bold text-lg">Reply ready</h1>
           </div>
           <div
-            class="flex flex-col py-10 px-20 justify-center shadow-xl rounded-3xl gap-3 bg-white"
+            class="flex flex-col text-center py-10 px-20 justify-center shadow-xl rounded-3xl gap-3 bg-white"
           >
             <div
               class="bg-blue-500 rounded-full p-5 w-20 h-20 place-self-center"
@@ -220,7 +226,7 @@
       </div>
       <!-- end of top section -->
       <!-- section two -->
-      <div class="mt-[20%] mx-20 px-20">
+      <div class="mt-[100vh] lg:mt-[20%] mx-20 px-20">
         <div class="flex justify-between">
           <div class="place-self-start uppercase">
             <h6 class="text-red-400 text-sm font-bold">trending</h6>
